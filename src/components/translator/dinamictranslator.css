@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.dinamicTranslator {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: black;
+    font-family: 'Lilita One', sans-serif;
+    font-weight: bolder;
+}
+
+.languagesChoice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin: 50px 20px;
+}
+
+.reverse {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: #000 solid 3px;
+    background-image: url("reverse.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.language1,
+.language2 {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border: #facf39 3px solid;
+    margin: 0px 130px;
+    background-image: url("diversity.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.language1 > h3,
+.language2 > h3 {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+

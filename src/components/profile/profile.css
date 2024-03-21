@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Hepta+Slab:wght@1..900&family=Kranky&family=Lexend+Exa:wght@100..900&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&display=swap');
+
+.profileHere {
+    background-color: rgb(27, 26, 26);
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    color: aliceblue;
+    font-family: "Lexend Exa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.squares {
+    display: flex;
+    align-items: center;
+    margin-right: -360px;
+}
+
+.square1, .square2, .square3, .square4, .square5, .square6, .square7 {
+    background-color: rgb(27, 26, 26);
+    width: 150px;
+    height: 100px;
+    margin: 50px 0px;
+    border-bottom: 5px aliceblue solid;
+}
+
+.square2 {
+    border-bottom: 5px red solid;
+}
+
+.square3 {
+    border-bottom: 5px blue solid;
+}
+
+.square4 {
+    border-bottom: 5px pink solid;
+}
+
+.square5 {
+    margin-bottom: -150px;
+    border-left: 5px aliceblue solid;
+}
+
+.square6 {
+    border-left: 5px aliceblue solid;
+    margin-bottom: -350px;
+}
+
+.square7 {
+    border-left: 5px aliceblue solid;
+    margin-bottom: -550px;
+}
+
+.square8 {
+    width: 120px;
+    height: 30px;
+    border-bottom: #FACF39 solid 5px;
+    margin-bottom: -670px;
+}
+
+.throne {
+    width: 50px;
+    margin-bottom: -84px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+
+.profileCreation {
+    display: flex;
+    flex-direction: column;
+}
+
+.helloProfile {
+    text-transform: uppercase;
+    margin-left: -550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    margin-top: -10px;
+}
+
+.whoisProfile {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.learningUl {
+    display: flex;
+    list-style: none;
+    margin-bottom: -50px;
+    letter-spacing: 5px;
+    margin-left: -335px;
+    margin-top: 50px;
+    color: rgba(255, 255, 255, 0.60);
+    animation: lighting 1.5s linear 3;
+    animation-delay:2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes lighting {
+
+	0% {
+		color: #a6a6a6;
+		text-shadow: none;
+	    }
+
+	55% {
+		color: #484848;
+		text-shadow: none;
+	    }
+  
+	65% {
+		color: #ffff33;
+		text-shadow: 0 0 7px #fff900, 0 0 50px #ffff33;
+	    }
+    75% {
+		color: #a6a6a6;
+		text-shadow: none;
+	    }
+    85% {
+		color: #a6a6a6;
+		text-shadow: none;
+	    }
+    90% {
+		color: #ffff33;
+		text-shadow: 0 0 7px #fff900, 0 0 50px #ffff33;
+    }
+    100% {
+		color: #ffff33;
+		text-shadow: 0 0 7px #fff900, 0 0 50px #ffff33;
+	}
+
+    }
+
+  .learningUl:nth-child(1){
+    animation-delay: 1s;
+  }
+  .learningUl:nth-child(2){
+    animation-delay: 1s;
+  }
+  .learningUl:nth-child(3){
+    animation-delay: 1s;
+  }
+  .learningUl:nth-child(4){
+    animation-delay: 1.9s;
+  }
+  .learningUl:nth-child(5){
+    animation-delay: 1.9s;
+  }
+  .learningUl:nth-child(6){
+    animation-delay: 1.9s;
+  }
+  .learningUl:nth-child(7){
+    animation-delay: 2.2s;
+  }
+  .learningUl:nth-child(8){
+    animation-delay: 2.2s;
+  }
+  .learningUl:nth-child(9){
+    animation-delay: 2.2s;
+  }
+
+.profileCreationAvatar {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.profileAvatar {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileAvatarIcon {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-right: 70px;
+}
+
+.profileButtonCreation {
+    background-color: #FACF39;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-top: -10px;
+
+}
+
+.profileName {
+    resize: none;
+    width: 150px;
+    height: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    border-bottom: white 2px solid;
+}
+
+.startingJourneySection {
+    margin-top: 50px;
+    margin-left: -80px;
+}
+
+.startingJourney {
+    width: 250px;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.startJourneyText {
+    color: rgb(0, 0, 0);
+    text-decoration: underline 0px rgb(0, 0, 0);
+    padding-top: 8px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-underline-offset: none;
+}
+
+.startingJourney:hover {
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.startingJourney:hover > .startJourneyText {
+  color: aliceblue;
+  transition: 1s;
+}
+
+.buttonDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.createText {
+  font-size: 15px;
+  color: #a6a6a6;
+}

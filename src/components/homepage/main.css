@@ -1,0 +1,60 @@
+.symbol {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: -20px;
+}
+
+.name {
+    letter-spacing: 5px;
+}
+
+.name, .slogan {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.slogan {
+    margin: -18px;
+    letter-spacing: 1px;
+}
+
+.culture {
+    
+    border: solid #FACF39 3px;
+    border-left: 0px;
+    width: 600px;
+    height: 140px;
+    border-radius: 2px;
+}
+
+.starting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    font-family: "Lilita One", sans-serif;
+    font-weight:100;
+    margin-left: -100px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.countries {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 600px;
+    margin: 20px 0px 20px -70px;
+}

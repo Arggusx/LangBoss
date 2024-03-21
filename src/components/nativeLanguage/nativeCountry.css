@@ -1,0 +1,16 @@
+.nativeCountry {
+    margin: 10px 8px;
+    display: none;
+   
+}
+
+.nativeCountry-image {
+    width: 40px;
+    cursor: pointer;
+    border: solid 3px #FACF39;
+    border-radius: 50%;
+}
+
+.nativeCountry-name, .nativebackground, .nativeTranslationBackground, .nativeReviewHere, .nativeDescriptionHere, .nativeStarsHere, .nativeReachness, .nativeMonthsHere, .nativeCountry1Here, .nativeCountry2Here, .nativeCountry3Here, .nativeCountry4Here {
+    display: none;
+}

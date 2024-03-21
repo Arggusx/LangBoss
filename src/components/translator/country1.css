@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&display=swap');
+
+.country1 {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(27, 26, 26)solid 3px;
+    border-right: none;
+}
+
+.input1Background {
+    border-radius: 2px;
+    position: absolute;
+}
+
+.input1 {
+    resize: none;
+    width: 350px;
+    height: 200px;
+    border-radius: 2px;
+    border: 2px solid #FACF39;
+    background-color: rgba(255, 255, 255, 0.805);
+    padding: 10px;
+    font-family: 'Opensans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: -3px;
+    margin-top: -1px;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    margin-left: -170px;
+}
+
+.trashEraser, .reverseText {
+    width: 22px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.trashEraser:hover, .reverseText:hover {
+    transform: scale(1.05);
+    transition: 0.01s;
+}
+
+.buttonsChangeText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 20px;
+    height: 70px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 140px 0px 0px 450px;
+    position: absolute;
+}
+
+.countryBackgroundTranslation {
+    width: 370px;
+    height: 220px;
+    position: inherit;
+    margin-right: -200px;
+    margin-left: -170px;
+    
+}
+
+.countryBackground {
+    width: 500px;
+    height: 500px;
+    position: inherit;
+    margin-bottom: -2px;
+}
+

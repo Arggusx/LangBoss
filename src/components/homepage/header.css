@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.header {
+    border-bottom: #FACF39 solid 3px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-1 {
+    width: 50px;
+    cursor: pointer;
+}
+
+.logo-1:hover {
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.slogan-1 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    user-select: none;
+    margin-top: -15px;
+    font-size: 15px;
+}
+
+.name-1 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-top: -2px;
+}
+
