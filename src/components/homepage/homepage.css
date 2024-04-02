@@ -5,6 +5,6 @@
     flex-direction: column;
     scroll-behavior: smooth;
     overflow: hidden;
-    height: 880px;
+    height: 100vh;
 }
 
