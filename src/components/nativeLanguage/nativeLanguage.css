@@ -3,7 +3,7 @@
 
 .nativeLanguage {
     background-color: rgb(27, 26, 26);
-    height: 100vh;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
