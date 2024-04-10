@@ -14,3 +14,9 @@
 .nativeCountry-name, .nativebackground, .nativeTranslationBackground, .nativeReviewHere, .nativeDescriptionHere, .nativeStarsHere, .nativeReachness, .nativeMonthsHere, .nativeCountry1Here, .nativeCountry2Here, .nativeCountry3Here, .nativeCountry4Here {
     display: none;
 }
+
+@media screen and (max-width: 480px) {
+    .nativeCountry-image {
+        width: 35px;
+    }
+}
