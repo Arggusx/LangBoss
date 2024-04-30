@@ -5,6 +5,30 @@
     flex-direction: column;
     scroll-behavior: smooth;
     overflow: hidden;
-    height: 880px;
+    height: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    .homepage {
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .homepage {
+        height: 850px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .homepage {
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .homepage {
+        height: 980px;
+    }
 }
 
