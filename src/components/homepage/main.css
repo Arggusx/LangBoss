@@ -58,3 +58,85 @@
     width: 600px;
     margin: 20px 0px 20px -70px;
 }
+
+@media screen and (max-width: 750px) {
+
+    .culture {
+        width: 500px;
+        height: 120px;
+    }
+    .starting {
+        margin-left: -50px;
+    }
+
+    .countries {
+        width: 450px;
+        margin: 20px 0px 20px 20px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 580px) {
+
+    .culture {
+        width: 420px;
+        height: 110px;
+    }
+    .starting {
+        margin-left: -10px;
+    }
+
+    .countries {
+        margin: 20px 0px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .culture {
+        width: 320px;
+        height: 100px;
+    }
+    .starting {
+        margin-left: 0px;
+        font-size: 10px;
+    }
+
+    .countries {
+        width: 250px;
+        margin: 20px 0px 20px 80px;
+    }
+
+}
+
+
+@media screen and (max-width: 340px) {
+
+    .culture {
+        width: 280px;
+        height: 80px;
+    }
+    .starting {
+        margin-left: 0px;
+        font-size: 10px;
+    }
+
+    .countries {
+        width: 250px;
+        margin: 20px 0px 20px 50px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: -20px;
+    }
+
+    .name, .slogan {
+        
+        font-weight: 50;
+    }
+    
+}
