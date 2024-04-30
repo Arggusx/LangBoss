@@ -16,11 +16,6 @@
     display: flex;
 }
 
-.arrows:hover > .arrow1 {
-    transition: 0.3s;
-    margin-left: 5px;
-}
-
 .arrow1, .arrow2, .arrow3 {
     border: solid white;
     border-width: 0px 4px 4px 0;
