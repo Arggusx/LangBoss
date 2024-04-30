@@ -25,3 +25,51 @@
     -webkit-transform: rotate(-45deg);
     cursor: pointer;
   }
+
+@media screen and (max-width: 750px) {
+
+    
+    .footer {
+        height: 120px;
+    }
+
+    .footer > img {
+        width: 50px;
+        height: 50px;
+    }
+}
+    
+
+@media screen and (max-width: 580px) {
+    .footer {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer {
+        height: 110px;
+    }
+
+    .footer > img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .arrow1, .arrow2, .arrow3 {
+        border-width: 0px 2px 2px 0;
+    }
+}
+
+@media screen and (max-width: 340px) {
+
+    .footer {
+        height: 80px;
+    }
+
+    .footer > img {
+        width: 35px;
+        height: 35px;
+    }
+
+}
