@@ -14,8 +14,7 @@ function App() {
         <header>
         </header>
         <Routes> 
-          <Route path="/" element={<Profile />} /> 
-          <Route path="/nativeLanguage" element={<NativeLanguage />} /> 
+          <Route path="/" element={<NativeLanguage />} /> 
           <Route path="/homepage" element={<Homepage />} /> 
           <Route path="/translator" element={<Translator />} /> 
         </Routes>
