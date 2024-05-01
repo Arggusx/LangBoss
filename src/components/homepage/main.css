@@ -59,6 +59,28 @@
     margin: 20px 0px 20px -70px;
 }
 
+@media  (min-height: 1100px) and (max-height:1300px) {
+    .countries { 
+        margin-bottom: 200px;
+    }
+
+    .logo {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+
+.countries { 
+    margin-bottom: 100px;
+}
+
+.logo {
+    margin-top: 100px;
+}
+    
+}
+
 @media screen and (max-width: 750px) {
 
     .culture {
@@ -139,4 +161,25 @@
         font-weight: 50;
     }
     
+}
+
+@media  (min-height: 1100px) and (max-height:1300px) {
+    .countries { 
+        margin-bottom: 215px;
+    }
+
+    .logo {
+        margin-top: 215px;
+    }
+}
+
+
+@media  (min-height: 1301px) and (max-height:1400px) {
+    .countries { 
+        margin-bottom: 300px;
+    }
+
+    .logo {
+        margin-top: 300px;
+    }
 }
