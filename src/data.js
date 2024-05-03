@@ -41,7 +41,7 @@ const countries = [
         name: "Spanish",
         description: "Russian is a Slavic language that is the official language in Russia, Belarus, Kazakhstan and Kyrgyzstan, as well as one of the official languages in several other countries. It has a rich history, including different dialects and influences from different cultures.",
         translation: "Русский язык — это славянский язык, который является официальным языком в России, Беларуси, Казахстане и Кыргызстане, а также одним из официальных языков в ряде других стран. Он имеет богатую историю, включая различные диалекты и влияние различных культур.",
-        translationBackground: "/img/translator/spanishTranslation.jpg",
+        translationBackground: "/img/translator/SpanishTranslation.jpg",
         background: "/img/translator/spanishBackground.jpg",
         culture:"/img/translator/russiaCulture.jpg",
         challenge:"⭐⭐⭐⭐⭐",
