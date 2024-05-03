@@ -5,14 +5,16 @@ const Country1 = ({ handleTextChange, background, translationBackground, trashEr
 
 
     const [text, setText] = useState(""); 
+    const [savedText, setSavedText] = useState("");
    
     const handleTextErase = () => {
+        setSavedText(text);
         setText("");
-        updateReceivedText(""); 
+        updateReceivedText("");
     };
 
     const handleTextRestore = () => {
-        setText("");
+        setText(savedText);
         updateReceivedText(""); 
     };
 
