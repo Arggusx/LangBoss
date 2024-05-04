@@ -59,16 +59,6 @@
     margin: 20px 0px 20px -70px;
 }
 
-@media  (min-height: 1100px) and (max-height:1300px) {
-    .countries { 
-        margin-bottom: 200px;
-    }
-
-    .logo {
-        margin-top: 200px;
-    }
-}
-
 @media screen and (max-width: 2000px) {
 
 .countries { 
@@ -163,6 +153,80 @@
     
 }
 
+@media  (min-height: 1901px) and (max-height:2000px) {
+
+    .logo {
+        margin-top: 300px;
+    }
+    .countries { 
+        margin-bottom: 865px;
+    }
+}
+
+@media  (min-height: 1801px) and (max-height:1900px) {
+
+    .logo {
+        margin-top: 300px;
+    }
+    .countries { 
+        margin-bottom: 765px;
+    }
+}
+
+@media  (min-height: 1701px) and (max-height:1800px) {
+
+    .logo {
+        margin-top: 300px;
+    }
+    .countries { 
+        margin-bottom: 665px;
+    }
+}
+
+
+@media  (min-height: 1601px) and (max-height:1700px) {
+
+    .logo {
+        margin-top: 300px;
+    }
+    .countries { 
+        margin-bottom: 565px;
+    }
+}
+
+
+
+@media  (min-height: 1501px) and (max-height:1600px) {
+
+    .logo {
+        margin-top: 300px;
+    }
+    .countries { 
+        margin-bottom: 465px;
+    }
+}
+
+
+@media  (min-height: 1401px) and (max-height:1500px) {
+
+    .logo {
+        margin-top: 300px;
+    }
+    .countries { 
+        margin-bottom: 345px;
+    }
+}
+
+@media  (min-height: 1301px) and (max-height:1400px) {
+
+    .logo {
+        margin-top: 300px;
+    }
+    .countries { 
+        margin-bottom: 255px;
+    }
+}
+
 @media  (min-height: 1100px) and (max-height:1300px) {
     .countries { 
         margin-bottom: 215px;
@@ -170,16 +234,5 @@
 
     .logo {
         margin-top: 215px;
-    }
-}
-
-
-@media  (min-height: 1301px) and (max-height:1400px) {
-    .countries { 
-        margin-bottom: 300px;
-    }
-
-    .logo {
-        margin-top: 300px;
     }
 }
