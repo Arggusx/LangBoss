@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const NativeCountry = ({nativeCountry, id, name, translationBackground, background, stars, review, reachness, months, description, country1, country2, country3, country4}) => {
     return (
-        
         <div key={id} className="nativeCountry">
             <Link 
             
@@ -31,12 +30,11 @@ const NativeCountry = ({nativeCountry, id, name, translationBackground, backgrou
             <h3 className="nativeReachness">{reachness}</h3>
             <h3 className="nativeMonthsHere">{months}</h3>
             <img className="nativeCountry1Here" src={country1} alt="country1"></img>
-            <img className="nativeCountry2Here" src={country2}  alt="country2"></img>
+            <img className="nativeCountry2Here" src={country2} alt="country2"></img>
             <img className="nativeCountry3Here" src={country3} alt="country3"></img>
             <img className="nativeCountry4Here" src={country4} alt="country4"></img>
             </Link>
         </div>
-        
     )
 }
 
