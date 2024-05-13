@@ -3,12 +3,12 @@
 .country1 {
     width: 500px;
     height: 500px;
-    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: rgb(27, 26, 26)solid 3px;
-    border-right: none;
+}
+.country3{
+    height: 500px;
 }
 
 .input1Background {
@@ -73,6 +73,5 @@
     width: 500px;
     height: 500px;
     position: inherit;
-    margin-bottom: -2px;
 }
 
