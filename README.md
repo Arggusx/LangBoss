@@ -26,7 +26,7 @@ Vai ser desenvolvido um front-end amigável usando Figma, React e Tailwind CSS.
 npm start
 ```
 
-Abra [http://localhost:3000](http://localhost:3000) para ver o site rodando localmente no seu navegador.
+Abra https://langboss.vercel.app/ para ver o site rodando localmente no seu navegador.
 
 ## Para construir uma "build" para produção:
 ```
