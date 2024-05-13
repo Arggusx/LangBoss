@@ -71,7 +71,7 @@ const Country = ({ country, name, id, translationBackground, background, country
           <h3 className="reachness2">{reachness}</h3>
           <h3 className="monthsHere">{months}</h3>
           <img className="country1Here" src={country1} alt="country1"></img>
-          <img className="country2Here" src={country2}  alt="country2"></img>
+          <img className="country2Here" src={country2} alt="country2"></img>
           <img className="country3Here" src={country3} alt="country3"></img>
           <img className="country4Here" src={country4} alt="country4"></img>
          
