@@ -1,10 +1,10 @@
 .footer {
     width: 100%;
     background-color: #FACF39;
-    height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10px 0px;
 }
 
 .footer > img {
@@ -26,5 +26,13 @@
     cursor: pointer;
   }
 
-
+@media screen and (max-width: 450px){
+    .footer > img {
+        width: 40px;
+        height: 40px;
+    }
+    .arrow1, .arrow2, .arrow3 {
+        border-width: 0px 2px 2px 0;
+    }
+}
 
