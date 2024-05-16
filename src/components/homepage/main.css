@@ -1,10 +1,11 @@
 .Main{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100%;
+    gap: 50px;
 }
 .symbol {
     display: flex;
@@ -29,7 +30,6 @@
     font-weight: 100;
     font-style: normal;
     text-transform: uppercase;
-    user-select: none;
 }
 
 .slogan {
@@ -39,12 +39,10 @@
 }
 
 .culture {
-    
     border: solid #FACF39 3px;
     border-left: 0px;
-    width: 600px;
-    height: 140px;
     border-radius: 2px;
+    width: 100%;
 }
 
 .starting {
@@ -55,6 +53,8 @@
     font-weight:100;
     text-transform: uppercase;
     font-size: 12px;
+    margin-left: 10px;
+    margin-right: 15px;
 }
 .chooseLang{
     margin-bottom: 0px;
@@ -68,84 +68,20 @@
     width: 600px;
 }
 
-@media screen and (max-width: 2000px) {
-
-  
-}
-
-@media screen and (max-width: 750px) {
-
-    .culture {
-        width: 500px;
-        height: 120px;
-    }
-    .starting {
-        margin-left: -50px;
-    }
-
+@media screen and (max-width: 655px) {
     .countries {
         width: 450px;
     }
-
-    
-}
-
-
-@media screen and (max-width: 580px) {
-
-    .culture {
-        width: 420px;
-        height: 110px;
-    }
-    .starting {
-        margin-left: -10px;
-    }
-
 }
 
 @media screen and (max-width: 450px) {
-
-    .culture {
-        width: 320px;
-        height: 100px;
-    }
     .starting {
-        margin-left: 0px;
         font-size: 10px;
     }
 
     .countries {
-        width: 250px;
-        margin: 0px 0px 20px 0px;
+        width: 200px;
     }
 
-}
-
-
-@media screen and (max-width: 340px) {
-
-    .culture {
-        width: 280px;
-        height: 80px;
-    }
-    .starting {
-        margin-left: 0px;
-        font-size: 10px;
-    }
-
-    .countries {
-        width: 250px;
-    }
-
-    .logo {
-        width: 80px;
-        height: 80px;
-    }
-
-    .name, .slogan {
-        
-        font-weight: 50;
-    }
-    
 }
 
