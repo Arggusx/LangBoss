@@ -43,30 +43,19 @@ function NativeLanguage() {
       };
 
     return (
-        <div className="nativeLanguage"
-        
-        style={{
+        <div className="nativeLanguage" style={{
           backgroundColor: darkMode ? "rgb(27, 26, 26)" : "white",
-          color: darkMode ? "aliceblue" : "rgb(27, 26, 26)",
-        }}>
-            <div className="profileDisplayNative">
-            <ProfileDisplay
-            toggleDarkMode={toggleDarkMode}
-            darkMode={darkMode}
-            />
-            </div>
+          color: darkMode ? "aliceblue" : "rgb(27, 26, 26)",}}>
+            <div className="profileDisplayNative"><ProfileDisplay toggleDarkMode={toggleDarkMode} darkMode={darkMode}/></div>
             <div className="nativeSymbol">
-            <div className="symbol">
-            <img className="logo" src="/img/homepage/crown.png" alt="crownlogo"></img>
-            <h1 className="name">LangBoss</h1>
-            <h3 className="slogan">Discovering seas</h3>
-            </div>
+                <div className="symbol">
+                    <img className="logo" src="/img/homepage/crown.png" alt="crownlogo"></img>
+                    <h1 className="name">LangBoss</h1>
+                    <h3 className="slogan">Discovering seas</h3>
+                </div>
             </div>
             <h1 className="choiceNativeLanguage">Welcome! What is your native language?</h1>
-            
-            <div className="nativeCountries">
-                {nativeCountries}
-            </div>
+            <div className="nativeCountries">{nativeCountries}</div>
         </div>
     )
 }

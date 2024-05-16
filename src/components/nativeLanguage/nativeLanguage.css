@@ -38,11 +38,9 @@
     background-color: transparent;
 }
 
-
 .nativeCountries:hover > .nativeCountry {
     display: block;
     transition: 0.3s;
-   
 }
 
 .nativeCountries:not(:hover) {
@@ -84,9 +82,7 @@
 
     .profileDisplayNative {
         margin-right: -370px;
-    }
-    
-    
+    }  
 }
 
 @media screen and (max-width: 480px) {
