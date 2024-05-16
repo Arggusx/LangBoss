@@ -15,7 +15,7 @@ const Country1 = ({ handleTextChange, background, translationBackground, trashEr
 
     const handleTextRestore = () => {
         setText(savedText);
-        updateReceivedText(""); 
+        updateReceivedText(savedText); 
     };
 
 
