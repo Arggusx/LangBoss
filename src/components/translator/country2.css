@@ -3,12 +3,9 @@
 .country2 {
     width: 500px;
     height: 500px;
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: rgb(27, 26, 26) solid 3px;
-    border-left: none;
 }
 
 .input2Background {

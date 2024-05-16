@@ -33,13 +33,11 @@ const Dinamictranslator = ({ name2, name1, nativeBackground, nativeTranslationBa
         <div className={`dinamicTranslator ${isReversed ? 'reversed' : ''}`}>
             <Country1 handleTextChange={handleChange} background={isReversed ? background : nativeBackground} translationBackground={isReversed ? backgroundTranslation :  nativeTranslationBackground} trashEraser={"/img/translator/trash-can.png"} reverseText="/img/translator/seta-reversa.png" updateReceivedText={updateReceivedText}/>
             <div className="languagesChoice">
-                <div className="language1"><h3>{isReversed ? name2 : name1}</h3>
-                </div>
+                <div className="language1"><h3>{isReversed ? name2 : name1}</h3></div>
                 <button className="reverse" onClick={handleReverse}></button>
                 <div className="language2"><h3>{isReversed ?  name1 : name2}</h3></div>
             </div>
             <Country2 receivedText={text} background={isReversed ? nativeBackground : background} translationBackground={isReversed ? nativeTranslationBackground : backgroundTranslation} /> 
-            
         </div>
     );
 };
