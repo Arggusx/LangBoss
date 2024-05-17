@@ -46,8 +46,8 @@ function NativeLanguage() {
         <div className="nativeLanguage" style={{
           backgroundColor: darkMode ? "rgb(27, 26, 26)" : "white",
           color: darkMode ? "aliceblue" : "rgb(27, 26, 26)",}}>
-            <div className="profileDisplayNative"><ProfileDisplay toggleDarkMode={toggleDarkMode} darkMode={darkMode}/></div>
             <div className="nativeSymbol">
+                <div className="profileDisplayNative"><ProfileDisplay toggleDarkMode={toggleDarkMode} darkMode={darkMode}/></div>
                 <div className="symbol">
                     <img className="logo" src="/img/homepage/crown.png" alt="crownlogo"></img>
                     <h1 className="name">LangBoss</h1>
