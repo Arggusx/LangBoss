@@ -29,11 +29,6 @@ export default function Main({ logo, name, slogan}) {
 
     return (
         <div className="Main">
-            <div className="symbol">
-                <img className="logo" src={logo} alt="crownlogo"></img>
-                <h1 className="name">{name}</h1>
-                <h3 className="slogan">{slogan}</h3>
-            </div>
             <div className="starting">
                 <h2>Learn Languages immersing yourself</h2>
                 <img className="culture" src="/img/homepage/border.png" alt="culture"></img>
