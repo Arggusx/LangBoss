@@ -2,7 +2,6 @@
 
 .languageDescription {
     text-align: center;
-    
 }
 
 .language {
@@ -26,7 +25,7 @@
 
 .textHistory {
     min-height: 100px;
-    background-color: red;
+    background-color: #FACF39;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -46,7 +45,9 @@
 .description {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
-    color: white;
+    color: black;
+    font-style: italic;
+    font-weight: 600;
     font-size: 15px;
     width: 750px;
     text-shadow: black solid 1px;
@@ -54,15 +55,17 @@
     margin-top: 0px;
 }
 
-@media only screen and (max-width: 780px){
-    .languageHistory{
+@media only screen and (max-width: 780px) {
+    .languageHistory {
         flex-direction: column;
         gap: 30px;
     }
-    .descriptionImage{
+
+    .descriptionImage {
         margin-right: 0px;
         margin-left: 0px;
     }
+
     .textHistory {
         margin-left: 0px;
         margin-right: 0px;
