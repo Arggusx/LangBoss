@@ -50,15 +50,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: "Lilita One", sans-serif;
-    font-weight:100;
+    font-family: "Hepta Slab", serif;
     text-transform: uppercase;
-    font-size: 12px;
     margin-left: 10px;
     margin-right: 15px;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.textLang{
+    font-size: clamp(15px,3vw,28px);
 }
 .chooseLang{
     margin-bottom: 0px;
+    font-size: clamp(15px,3vw,28px);
 }
 
 .countries {
@@ -76,10 +80,6 @@
 }
 
 @media screen and (max-width: 450px) {
-    .starting {
-        font-size: 10px;
-    }
-
     .countries {
         width: 200px;
     }
