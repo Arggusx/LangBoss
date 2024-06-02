@@ -21,7 +21,13 @@ Estará disponível em website.
 ### Como? (How):
 Vai ser desenvolvido um front-end amigável usando Figma, React e Tailwind CSS.
 
-## Para executar o projeto:
+## Para executar o projeto localmente:
+### Instale a dependência react-scripts:
+```
+npm install react-scripts
+```
+
+### Inicie o NodeJS com o site funcionando:
 ```
 npm start
 ```
