@@ -19,8 +19,8 @@
     font-style: normal;
     text-transform: uppercase;
     user-select: none;
-    margin-top: -15px;
     font-size: 15px;
+    margin: 0;
 }
 
 .name-1 {
@@ -29,7 +29,7 @@
     font-style: normal;
     text-transform: uppercase;
     font-size: 20px;
-    letter-spacing: 5px;
-    margin-top: -2px;
+    letter-spacing: 3px;
+    margin: 0;
 }
 
