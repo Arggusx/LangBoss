@@ -5,6 +5,7 @@ const countries = [
         name: "Portuguese",
         description:  "PORTUGUESE IS A ROMANCE LANGUAGE THAT IS THE OFFICIAL LANGUAGE IN PORTUGAL, BRAZIL, MOZAMBIQUE, ANGOLA, GUINEA-BISSAU, EAST TIMOR, EQUATORIAL GUINEA, AND CAPE VERDE, AS WELL AS ONE OF THE OFFICIAL LANGUAGES IN MACAU. IT HAS A RICH HISTORY, INCLUDING DIFFERENT DIALECTS AND INFLUENCES FROM DIFFERENT CULTURES.",
         translation: "",
+        translationBackground: "/img/translator/brazilTranslation.jpg",
         background: "/img/translator/cristoredentor.jpg",
         culture:"/img/translator/russiaCulture.jpg",
         challenge:"⭐⭐⭐⭐",
