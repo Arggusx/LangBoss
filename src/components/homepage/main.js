@@ -30,9 +30,9 @@ export default function Main({ logo, name, slogan}) {
     return (
         <div className="Main">
             <div className="starting">
-                <h2>Learn Languages immersing yourself</h2>
+                <h1 className="textLang">Learn Languages immersing yourself</h1>
                 <img className="culture" src="/img/homepage/border.png" alt="culture"></img>
-                <h2 className="chooseLang">Choose The Language Below:</h2>
+                <h1 className="chooseLang">Choose The Language Below:</h1>
             </div>
             <div className="countries">
                 {countries}
