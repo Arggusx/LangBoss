@@ -25,7 +25,6 @@
     font-weight: 600;
     font-style: normal;
     font-size: 12px;
-    text-transform: uppercase;
     margin-bottom: 9px;
     margin-top: -1px;
     word-wrap: break-word; 
@@ -49,4 +48,70 @@
     position: inherit;
 }
 
+@media (max-width: 1050px) {
 
+    .country2, .nativeCountryBackground {
+        width: 390px;
+        height: 390px;
+        margin-left: -3px;
+    }
+
+    .input2 {
+        width: 300px;
+        height: 200px;
+        margin-left: -150px;
+        margin-top: 25px;
+    }
+
+    .nativeCountryBackgroundTranslation {
+        width: 323px;
+        margin-left: -150px;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .country2, .nativeCountryBackground {
+        width: 390px;
+        height: 390px;
+        margin-top: -2.3px;
+    }
+
+    .input2 {
+        margin-left: -160px;
+        margin-top: 40px;
+    }
+
+    .nativeCountryBackgroundTranslation {
+        margin-left: -160px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .country2, .nativeCountryBackground {
+        width: 250px;
+        height: 300px;
+        margin-left: -5px;
+        margin-top: 0;
+    }
+
+    .input2 {
+        width: 200px;
+        height: 150px;
+        margin-right: -150px;
+        margin-left: -110px;
+        margin-top: 70px;
+    }
+
+    .nativeCountryBackgroundTranslation {
+        width: 222px;
+        height: 172px;
+        margin-right: -150px;
+        margin-left: -110px;
+        margin-bottom: -50px;
+        margin-top: 70px;
+    }
+}
