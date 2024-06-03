@@ -20,6 +20,7 @@
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
+    font-size: clamp(20px,3vw,32px);
 }
 
 .nativeCountries {
@@ -49,14 +50,13 @@
     .nativeCountries {
         width: 90%;
     }
-
-    .choiceNativeLanguage {
-        font-size: 20px;
-    }
 }
 
 @media screen and (max-width: 480px) {
     .nativeCountries {
         width: 95%; 
     }
+    .choiceNativeLanguage {
+        font-size: clamp(20px, 1.2rem, 20px); 
+      }
 }
