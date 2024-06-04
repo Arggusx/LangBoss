@@ -1,25 +1,24 @@
 import React from "react";
 import './nativeCountry.css'
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 const NativeCountry = ({nativeCountry, id, name, translationBackground, background, stars, review, reachness, months, description, country1, country2, country3, country4}) => {
-    return (
-        <div key={id} className="nativeCountry">
-            <Link 
-            
-            to={`/homepage/?nativeCountryName=${encodeURIComponent(name)}
-            &nativeBackgroundTranslation=${encodeURIComponent(translationBackground)}
-            &nativeBackground=${encodeURIComponent(background)}
-            &nativeDescription=${encodeURIComponent(description)}
-            &nativeStars=${encodeURIComponent(stars)}
-            &nativeReview=${encodeURIComponent(review)}
-            &nativeReachness=${encodeURIComponent(reachness)}
-            &nativeMonths=${encodeURIComponent(months)}
-            &nativeCountry1=${encodeURIComponent(country1)}
-            &nativeCountry2=${encodeURIComponent(country2)}
-            &nativeCountry3=${encodeURIComponent(country3)}
-            &nativeCountry4=${encodeURIComponent(country4)}
-            `}> 
+  const url_native = `/homepage/?nativeCountryName=${encodeURIComponent(name)}
+              &nativeBackgroundTranslation=${encodeURIComponent(translationBackground)}
+              &nativeBackground=${encodeURIComponent(background)}
+              &nativeDescription=${encodeURIComponent(description)}
+              &nativeStars=${encodeURIComponent(stars)}
+              &nativeReview=${encodeURIComponent(review)}
+              &nativeReachness=${encodeURIComponent(reachness)}
+              &nativeMonths=${encodeURIComponent(months)}
+              &nativeCountry1=${encodeURIComponent(country1)}
+              &nativeCountry2=${encodeURIComponent(country2)}
+              &nativeCountry3=${encodeURIComponent(country3)}
+              &nativeCountry4=${encodeURIComponent(country4)}
+              `;
+  return (
+    <div key={id} className="nativeCountry">
+      <Link to={url_native.split(" ").join("")}>
             <img className="nativeCountry-image" src={nativeCountry} alt="country" ></img>
             <h3 className="nativeCountry-name">{name}</h3>
             <img className="nativeTranslationBackground" src={translationBackground} alt="translation.background"></img>
