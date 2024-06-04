@@ -2,8 +2,9 @@ import React from "react";
 import './nativeCountry.css'
 import { Link } from 'react-router-dom';
 
-const NativeCountry = ({nativeCountry, id, name, translationBackground, background, stars, review, reachness, months, description, country1, country2, country3, country4}) => {
+const NativeCountry = ({nativeCountry, id, name, short_name, translationBackground, background, stars, review, reachness, months, description, country1, country2, country3, country4}) => {
   const url_native = `/homepage/?nativeCountryName=${encodeURIComponent(name)}
+              &nativeShortName=${encodeURIComponent(short_name)}
               &nativeBackgroundTranslation=${encodeURIComponent(translationBackground)}
               &nativeBackground=${encodeURIComponent(background)}
               &nativeDescription=${encodeURIComponent(description)}
