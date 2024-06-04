@@ -1,12 +1,11 @@
 import React, {useState} from "react";
 import "./country1.css";
 
-const Country1 = ({ handleTextChange, background, translationBackground, trashEraser, reverseText, updateReceivedText}) => {
+const Country1 = ({background, translationBackground, trashEraser, reverseText, updateReceivedText}) => {
 
-
-    const [text, setText] = useState(""); 
+    const [text, setText] = useState("");
     const [savedText, setSavedText] = useState("");
-   
+
     const handleTextErase = () => {
         setSavedText(text);
         setText("");
@@ -15,17 +14,15 @@ const Country1 = ({ handleTextChange, background, translationBackground, trashEr
 
     const handleTextRestore = () => {
         setText(savedText);
-        updateReceivedText(savedText); 
+        updateReceivedText(savedText);
     };
-
 
     return (
         <div className="country1">
             <div className="input1Background">
                 <textarea maxLength="654" className="input1" placeholder="Enter your text here" onChange={(event) => {
-                            handleTextChange(event); 
-                            setText(event.target.value); 
-                            updateReceivedText(event.target.value); 
+                            setText(event.target.value);
+                            updateReceivedText(event.target.value);
                 }} value={text}></textarea>
                 <div>
                     <img className="countryBackgroundTranslation" src={translationBackground} alt="translationBackground"></img>
