@@ -11,9 +11,28 @@ const Dinamictranslator = ({ name2, name1, short_name2, short_name1, nativeBackg
     const backgroundTranslation = queryParams.get("backgroundTranslation") || "";
     const background = queryParams.get("background") || "";
     const [text, setText] = useState("");
+    const waitTime = 1000;
+
+    let translatedText = "";
+    let timer;
 
     const updateReceivedText = (newText) => {
-        setText(newText);
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        fetch(
+          `https://translate.googleapis.com/translate_a/single?client=gtx&sl=${isReversed ? short_name2 : short_name1}&tl=${isReversed ? short_name1 : short_name2}&dt=t&q=${encodeURIComponent(newText)}`,
+        ).then((res) => {
+          res.json().then((data) => {
+            /* Percorre o array data do Promise e atribui as palavras do
+               idioma de destino de cada array (array dentro de outro array)
+               para translatedText. */
+            for (let i in data[0]) {
+              translatedText += data[0][i][0];
+            }
+            setText(translatedText);
+          });
+        });
+      }, waitTime);
     };
 
     return (
