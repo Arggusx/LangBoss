@@ -8,9 +8,10 @@ export default function Main({ logo, name, slogan}) {
     const countries = data.map((country) => {
         return (
           <Country
-            key={country.key} 
+            key={country.key}
             country={country.country}
             name={country.name}
+            short_name={country.short_name}
             translationBackground={country.translationBackground}
             background={country.background}
             description={country.description}

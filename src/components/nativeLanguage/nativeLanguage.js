@@ -13,6 +13,7 @@ function NativeLanguage() {
           <NativeCountry
             nativeCountry={country.country}
             name={country.name}
+            short_name={country.short_name}
             id={country.key}
             background={country.background}
             translationBackground={country.translationBackground}
@@ -33,11 +34,11 @@ function NativeLanguage() {
         const storedTheme = localStorage.getItem("theme");
         return storedTheme ? JSON.parse(storedTheme) : false;
       });
-    
+
       useEffect(() => {
         localStorage.setItem("theme", JSON.stringify(darkMode));
       }, [darkMode]);
-    
+
       const toggleDarkMode = () => {
         setDarkMode((prevDarkMode) => !prevDarkMode);
       };
