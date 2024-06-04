@@ -6,18 +6,18 @@ import { useLocation } from 'react-router-dom';
 
 
 
-const Dinamictranslator = ({ name2, name1, nativeBackground, nativeTranslationBackground, isReversed, handleReverse }) => {
+const Dinamictranslator = ({ name2, name1, short_name2, short_name1, nativeBackground, nativeTranslationBackground, isReversed, handleReverse }) => {
 
 
     const location = useLocation();
     const queryParams = new URLSearchParams(location.search);
     const backgroundTranslation = queryParams.get("backgroundTranslation") || "";
     const background = queryParams.get("background") || "";
-    
-    
 
-    const [text, setText] = useState(""); 
-    
+
+
+    const [text, setText] = useState("");
+
 
     const handleChange = (event) => {
         setText(event.target.value);
@@ -27,7 +27,7 @@ const Dinamictranslator = ({ name2, name1, nativeBackground, nativeTranslationBa
         setText(newText);
     };
 
-   
+
 
     return (
         <div className={`dinamicTranslator ${isReversed ? 'reversed' : ''}`}>
@@ -37,7 +37,7 @@ const Dinamictranslator = ({ name2, name1, nativeBackground, nativeTranslationBa
                 <button className="reverse" onClick={handleReverse}></button>
                 <div className="language2"><h3>{isReversed ?  name1 : name2}</h3></div>
             </div>
-            <Country2 receivedText={text} background={isReversed ? nativeBackground : background} translationBackground={isReversed ? nativeTranslationBackground : backgroundTranslation} /> 
+            <Country2 receivedText={text} background={isReversed ? nativeBackground : background} translationBackground={isReversed ? nativeTranslationBackground : backgroundTranslation} />
         </div>
     );
 };

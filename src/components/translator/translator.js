@@ -13,6 +13,7 @@ export default function Translator() {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const nativeCountryName = searchParams.get("nativeCountryNameImport") || "";
+  const nativeShortName = searchParams.get("nativeShortNameImport") || "";
   const nativeBackground = searchParams.get("nativeBackgroundImport") || "";
   const nativeTranslationBackground = searchParams.get("nativeBackgroundTranslationImport") || "";
   const countryName2 = searchParams.get("country") || "";
@@ -22,6 +23,7 @@ export default function Translator() {
   const country4 = searchParams.get("country4") || "";
   const review = searchParams.get("review") || "";
   const months = searchParams.get("months") || "";
+  const shortName = searchParams.get("shortName") || "";
   const description = searchParams.get("description") || "";
   const stars = searchParams.get("stars") || "";
   const reachness = searchParams.get("reachness") || "";
@@ -39,11 +41,11 @@ export default function Translator() {
         const storedTheme = localStorage.getItem("theme");
         return storedTheme ? JSON.parse(storedTheme) : false;
       });
-    
+
       useEffect(() => {
         localStorage.setItem("theme", JSON.stringify(darkMode));
       }, [darkMode]);
-    
+
       const toggleDarkMode = () => {
         setDarkMode((prevDarkMode) => !prevDarkMode);
       };
@@ -51,7 +53,7 @@ export default function Translator() {
       const [isReversed, setIsReversed] = useState(false);
 
       const handleReverse = () => {
-        setIsReversed(!isReversed); 
+        setIsReversed(!isReversed);
     };
 
 
@@ -62,14 +64,16 @@ export default function Translator() {
             <Header
                 logo="/img/homepage/crown.png"
                 name="LangBoss"
-                slogan="Discovering seas"  
-                darkMode={darkMode}  
-                toggleDarkMode={toggleDarkMode}  
+                slogan="Discovering seas"
+                darkMode={darkMode}
+                toggleDarkMode={toggleDarkMode}
             />
             <div>
             <Dinamictranslator
             name2={countryName2}
             name1={nativeCountryName}
+            short_name2={shortName}
+            short_name1={nativeShortName}
             nativeBackground={nativeBackground}
             nativeTranslationBackground={nativeTranslationBackground}
             handleReverse={handleReverse}
@@ -109,7 +113,7 @@ export default function Translator() {
             nativeMonths={nativeMonths}
             nativeStars={nativeStars}
             nativeReview={nativeReview}
-            />  
+            />
             </div>
         </div>
     )
