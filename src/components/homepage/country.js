@@ -4,18 +4,19 @@ import './country.css';
 import { useLocation } from "react-router-dom"
 
 
-const Country = ({ country, name, id, translationBackground, background, country1, country2, country3, country4, description, stars, review, months, reachness }) => {
+const Country = ({ country, name, short_name, id, translationBackground, background, country1, country2, country3, country4, description, stars, review, months, reachness }) => {
 
-    const [currentCountry, setCurrentCountry] = useState({ name, id, translationBackground, background, country1, country2, country3, country4, description, stars, review, months, reachness});
+    const [currentCountry, setCurrentCountry] = useState({ name, short_name, id, translationBackground, background, country1, country2, country3, country4, description, stars, review, months, reachness});
 
     const handleClick = () => {
-    setCurrentCountry({name, id, translationBackground, background, country1, country2, country3, country4, description, stars, review, months, reachness});
+    setCurrentCountry({name, short_name, id, translationBackground, background, country1, country2, country3, country4, description, stars, review, months, reachness});
     console.log(`Current Country: ${currentCountry.name}, ID: ${currentCountry.id}, translationBackground: ${currentCountry.translationBackground}` );
     };
 
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
     const nativeCountryName = searchParams.get("nativeCountryName") || "";
+    const nativeShortName = searchParams.get("nativeShortName") || "";
     const nativeBackgroundTranslation = searchParams.get("nativeBackgroundTranslation") || "";
     const nativeBackground = searchParams.get("nativeBackground") || "";
     const nativeDescription= searchParams.get("nativeDescription") || "";
@@ -29,6 +30,7 @@ const Country = ({ country, name, id, translationBackground, background, country
     const nativeCountry4 = searchParams.get("nativeCountry4") || "";
 
     const url_translator = `/translator/?country=${encodeURIComponent(name)}
+            &shortName=${encodeURIComponent(short_name)}
             &backgroundTranslation=${encodeURIComponent(translationBackground)}
             &background=${encodeURIComponent(background)}
             &description=${encodeURIComponent(description)}
@@ -41,6 +43,7 @@ const Country = ({ country, name, id, translationBackground, background, country
             &country4=${encodeURIComponent(country4)}
             &reachness=${encodeURIComponent(reachness)}
             &nativeCountryNameImport=${encodeURIComponent(nativeCountryName)}
+            &nativeShortNameImport=${encodeURIComponent(nativeShortName)}
             &nativeBackgroundTranslationImport=${encodeURIComponent(nativeBackgroundTranslation)}
             &nativeBackgroundImport=${encodeURIComponent(nativeBackground)}
             &nativeDescriptionImport=${encodeURIComponent(nativeDescription)}
