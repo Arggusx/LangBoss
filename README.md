@@ -19,7 +19,10 @@ Primeira semana de junho.
 Estará disponível em website.
 
 ### Como? (How):
-Vai ser desenvolvido um front-end amigável usando Figma, React e Tailwind CSS.
+Vai ser desenvolvido um front-end amigável usando Figma, React.
+
+## Diagrama de Uso:
+![Diagrama](/public/img/readme/Diagrama.png "Diagrama de Uso")
 
 ## Para executar o projeto localmente:
 ### Instale a dependência react-scripts:
