@@ -7,10 +7,9 @@
     justify-content: center;
     align-items: center;
 }
-.country3{
+.country3 {
     height: 500px;
 }
-
 .input1Background {
     border-radius: 2px;
     position: absolute;
@@ -30,7 +29,6 @@
     margin-bottom: -3px;
     margin-top: -1px;
     font-size: 12px;
-    text-transform: uppercase;
     position: absolute;
     margin-left: -170px;
 }
@@ -73,5 +71,98 @@
     width: 500px;
     height: 500px;
     position: inherit;
+    margin-bottom: -2px;
 }
 
+
+
+@media (max-width: 1050px) {
+    .country3 {
+        height: 393px;
+    }    
+
+    .country1, .countryBackground {
+        width: 390px;
+        height: 390px;
+    }
+
+    .countryBackground {
+        margin-top: 1px;
+    }
+
+    .input1 {
+        width: 300px;
+        height: 200px;
+        margin-right: -150px;
+    }
+
+    .countryBackgroundTranslation {
+        width: 323px;
+        margin-right: -150px;
+        margin-bottom: -50px;
+    }
+
+    .buttonsChangeText {
+        margin: 190px 0px 0px 345px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .country1, .countryBackground {
+        width: 390px;
+        height: 390px;
+        margin-left: -3px;
+    }
+
+    .countryBackground {
+        margin-top: 1px;
+        width: 390px;
+    }
+
+    .input1 {
+        width: 300px;
+        height: 200px;
+        margin-right: -150px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .country3 {
+        height: 300px;
+    }
+    .country1, .countryBackground {
+        width: 250px;
+        height: 320px;
+        margin-left: -5px;
+    }
+    .input1 {
+        width: 200px;
+        height: 150px;
+        margin-right: -150px;
+        margin-left: -110px;
+    }
+
+    .countryBackgroundTranslation {
+        width: 222px;
+        height: 172px;
+        margin-right: -150px;
+        margin-left: -110px;
+        margin-bottom: -50px;
+    }
+
+    .buttonsChangeText {
+        margin: 260px 0px 0px 165px;
+        display: flex;
+        flex-direction: row;
+        width: 50px;
+        height: 20px;
+    }
+
+    .trashEraser, .reverseText {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+}
