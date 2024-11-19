@@ -1,25 +1,29 @@
-# LangBoss
-### O que é? (what):
-LangBoss é uma plataforma web de tradução interativa onde o usuário consiga imergir naquela lingua, não simplesmente uma plataforma de tradução, e sim, de imersão.
+###LangBoss: Uma Plataforma de Tradução Interativa
+LangBoss é mais do que uma simples plataforma de tradução; é uma experiência de imersão linguística. O objetivo é transformar o aprendizado de idiomas em uma atividade divertida e interativa, saindo do tradicional processo tedioso para algo envolvente e dinâmico.
 
-### Por que? (Why):
-Para transformar um processo que seria tedioso em algo divertido e interativo
+###Por que LangBoss?
+A ideia surgiu para revolucionar a forma como as pessoas interagem com idiomas. A proposta é oferecer uma solução inovadora que torna o aprendizado prazeroso, aproximando os usuários da língua de maneira prática e intuitiva.
 
-### Quem? (Who):
-* Charles = Front-end.
-* Douglas = Front-end e Gerenciamento do projeto.
-* João = Front-end.
-* Esdras = Gerenciamento do projeto e comunicação entre o JavaScript e a API REST.
-* Matheus = Gerenciamento de Qualidade (Desenvolvimento e execução de testes).
+###Equipe de Desenvolvimento
+O projeto LangBoss foi construído por uma equipe multidisciplinar, com funções bem definidas:
 
-### Quando? (When):
-Primeira semana de junho.
+Charles: Desenvolvimento Front-end.
+Douglas: Desenvolvimento Front-end e gerenciamento do projeto.
+João: Desenvolvimento Front-end.
+Esdras: Gerenciamento do projeto e integração entre JavaScript e API REST.
+Matheus: Gerenciamento de qualidade, incluindo desenvolvimento e execução de testes.
+Cronograma
+O desenvolvimento começou na primeira semana de junho, com um planejamento focado em entregas rápidas e eficazes.
 
-### Onde? (Where):
-Estará disponível em website.
+###Disponibilidade e Acesso
+LangBoss estará acessível como um website, oferecendo uma interface amigável e intuitiva para o usuário.
 
-### Como? (How):
-Vai ser desenvolvido um front-end amigável usando Figma, React.
+###Tecnologias Utilizadas
+O projeto foi desenvolvido utilizando:
+
+Figma: Para criação de protótipos e design visual.
+React: Framework principal para o desenvolvimento do front-end.
+JavaScript e API REST: Integração e comunicação eficiente entre o front-end e os serviços de backend.
 
 ## Diagrama de Uso:
 ![Diagrama](/public/img/readme/Diagrama.png "Diagrama de Uso")
