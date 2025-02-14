@@ -11,10 +11,17 @@ const Dinamictranslator = ({ name2, name1, short_name2, short_name1, nativeBackg
     const backgroundTranslation = queryParams.get("backgroundTranslation") || "";
     const background = queryParams.get("background") || "";
     const [text, setText] = useState("");
+    const [sourceText, setSourceText] = useState("");
     const waitTime = 1000;
 
-    let translatedText = "";
+    
     let timer;
+
+     useEffect(() => {
+        if (sourceText) {
+            updateReceivedText(sourceText);
+        }
+    }, [isReversed]);
 
     const updateReceivedText = (newText) => {
       clearTimeout(timer);
@@ -23,6 +30,7 @@ const Dinamictranslator = ({ name2, name1, short_name2, short_name1, nativeBackg
           `https://translate.googleapis.com/translate_a/single?client=gtx&sl=${isReversed ? short_name2 : short_name1}&tl=${isReversed ? short_name1 : short_name2}&dt=t&q=${encodeURIComponent(newText)}`,
         ).then((res) => {
           res.json().then((data) => {
+            let translatedText = "";
             /* Percorre o array data do Promise e atribui as palavras do
                idioma de destino de cada array (array dentro de outro array)
                para translatedText. */
@@ -33,6 +41,16 @@ const Dinamictranslator = ({ name2, name1, short_name2, short_name1, nativeBackg
           });
         });
       }, waitTime);
+    };
+
+    const handleTextChange = (newText) => {
+        setSourceText(newText);
+        updateReceivedText(newText);
+    };
+
+    const handleReverseClick = () => {
+        handleReverse();
+        setSourceText(text); 
     };
 
     return (
